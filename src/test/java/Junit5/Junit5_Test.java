@@ -11,6 +11,7 @@ public class Junit5_Test {
     public void test(){
         System.out.println("Setup new project");
         assertEquals(1,2);
+        //Assertions
     }
 
     }
