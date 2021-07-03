@@ -16,9 +16,9 @@ public class Check {
     @Test
     public void PetStore(){
 
-   RestAssured.baseURI  = "https://petstore.swagger.io";
+   RestAssured.baseURI  = "https://petstore.swagger.io/v2/pet";
    RestAssured.basePath = "/api";
 
-   get("/swagger").prettyPeek();
+   get("/pet").prettyPeek();
     }
 }
