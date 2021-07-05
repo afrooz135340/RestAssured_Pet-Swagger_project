@@ -1,10 +1,7 @@
-package Junit5;
+package PetStore;
 
 import io.restassured.RestAssured;
-import io.restassured.matcher.RestAssuredMatchers.*;
-import io.restassured.response.Response;
 
-import static io.restassured.RestAssured.baseURI;
 import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.jupiter.api.*;
 
@@ -20,5 +17,6 @@ public class Check {
    RestAssured.basePath = "/api";
 
    get("/pet").prettyPeek();
+
     }
 }
