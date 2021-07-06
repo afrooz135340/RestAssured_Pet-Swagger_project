@@ -1,4 +1,5 @@
-package PetStore;
+package com.petStore.tests;
+
 
 import Utilites.TestBase;
 import io.restassured.http.ContentType;
@@ -34,7 +35,7 @@ public class Create_A_New_Pet extends TestBase {
         System.out.println("result is :" +newPetID);
 
 
-        File image = new File("src/test/resources/dog.jpg");
+        File image = new File("src/test/resources/hourse.jpg");
 
         String str = given()
                 .spec(petStoreReqSpec)
